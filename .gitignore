@@ -1,0 +1,6 @@
+*.swp
+*~
+auth.json
+data/likes/*
+data/dislikes/*
+env/
