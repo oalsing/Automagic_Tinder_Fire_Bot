@@ -4,6 +4,9 @@ auth.json
 data/
 env/
 
+processed_images.npy
+processed_labels.npy
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
