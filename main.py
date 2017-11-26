@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 from skimage.io import imread, imsave, imshow, show
 import pynder
 import matplotlib.pyplot as plt
