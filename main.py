@@ -23,10 +23,10 @@ while True:
             imshow(image)
             show()
 
-            input_string = "Write 1 to like. Write 2 to dislike"
+            input_string = "Write 1 to like. Write 2 to dislike. Any other character if you don't know."
             ans = input(input_string).lower()
 
             if ans == "1":
                 save_image(image, photo, True)
-            else:
+            elif ans == '2':
                 save_image(image, photo, False)
