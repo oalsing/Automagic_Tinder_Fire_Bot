@@ -2,7 +2,7 @@ from skimage.io import imread, imsave, imshow, show
 import pynder
 import matplotlib.pyplot as plt
 from helpers import get_access_token, get_login_credentials
-from io_helpers import save_image
+from io_helpers import save_image, init as init_io
 
 email, password, FBID = get_login_credentials()
 FBTOKEN = get_access_token(email, password)
@@ -11,6 +11,7 @@ print("Session started..")
 
 while True:
     users = session.nearby_users()
+    init_io()
     for user in users:
         photos = user.get_photos()
         print("Fetched user photos..")
