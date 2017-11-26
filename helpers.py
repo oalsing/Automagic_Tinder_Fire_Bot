@@ -26,7 +26,7 @@ def get_access_token(email, password):
 def get_login_credentials():
     print("Checking for credentials..")
     if os.path.exists('auth.json'):
-        print("Auth.json existed..")
+        print("Auth.json exists..")
         with open('auth.json') as data_file:
             data = json.load(data_file)
             if "email" in data and "password" in data and "FBID" in data:
@@ -35,4 +35,4 @@ def get_login_credentials():
                 print("Invalid auth.json file.")
 
     print("Auth.json missing or invalid. Please enter your credentials.")
-    return (input("Enter email..\n"), input("Enter password..\n"))
+    return (input("Enter email..\n"), input("Enter password..\n"), input("Enter FBID...\n"))
