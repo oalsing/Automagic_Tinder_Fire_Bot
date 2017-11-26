@@ -11,7 +11,7 @@ networkx==1.11
 numpy==1.13.0
 olefile==0.44
 Pillow==4.1.1
-pynder==0.0.13
+git+https://github.com/charliewolf/pynder.git@6b6827b
 pyparsing==2.2.0
 python-dateutil==2.6.0
 pytz==2017.2
