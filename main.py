@@ -1,8 +1,8 @@
 #! /usr/bin/env python
 
 from skimage.io import imread, imsave, imshow, show
+from matplotlib.pyplot import subplots
 import pynder
-import matplotlib.pyplot as plt
 from helpers import get_access_token, get_login_credentials
 from io_helpers import save_image, init as init_io
 
@@ -19,6 +19,7 @@ while True:
         print("Fetched user photos..")
         for photo in photos:
             image = imread(photo)
+            fig, ax = subplots(figsize=(10, 10))
             imshow(image)
             show()
 
